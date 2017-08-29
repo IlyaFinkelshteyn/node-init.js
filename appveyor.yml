@@ -4,7 +4,7 @@ cache:
   - node_modules
   #- app\node_modules
   - '%APPDATA%\npm-cache'
-  - '%USERPROFILE%\.electron'
+  #- '%USERPROFILE%\.electron'
 
 install:
   - ps: 'Install-Product node 6 x64'
