@@ -8,15 +8,15 @@ cache:
 
 install:
   - ps: 'Install-Product node 6 x64'
-  - npm install --global npm-windows-upgrade
-  - npm-windows-upgrade --no-spinner --npm-version latest
-  - npm install
+ # - npm install --global npm-windows-upgrade
+ # - npm-windows-upgrade --no-spinner --npm-version latest
+ # - npm install
   
   - npm install npm -g
   - npm prune
   - npm update
   
-test_script:
-  - node --version
-  - npm --version
-  - npm test
+#test_script:
+#  - node --version
+#  - npm --version
+#  - npm test
