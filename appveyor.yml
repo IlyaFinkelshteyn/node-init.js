@@ -13,7 +13,7 @@ install:
  # - npm install
   
   - npm install npm -g
-  - npm prune
+  - appveyor-retry npm prune
   - npm update
   
 #test_script:
