@@ -20,3 +20,7 @@ install:
 #  - node --version
 #  - npm --version
 #  - npm test
+
+on_finish:
+   - '7z a logs.zip '%APPDATA%\npm-cache\_logs'
+   - appveyor PushArtifact logs.zip
