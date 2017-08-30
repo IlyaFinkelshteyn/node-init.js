@@ -22,5 +22,5 @@ install:
 #  - npm test
 
 on_finish:
-   - 7z a logs.zip '%APPDATA%\npm-cache\_logs
+   - 7z a logs.zip C:\Users\appveyor\AppData\Roaming\npm-cache\_logs\
    - appveyor PushArtifact logs.zip
