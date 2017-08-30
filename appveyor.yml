@@ -3,7 +3,7 @@ build: 'off'
 cache:
   - node_modules
   #- app\node_modules
-  - '%APPDATA%\npm-cache'
+  #- '%APPDATA%\npm-cache'
   #- '%USERPROFILE%\.electron'
 
 install:
