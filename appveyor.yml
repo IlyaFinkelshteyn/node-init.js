@@ -7,7 +7,7 @@ build: 'off'
   #- '%USERPROFILE%\.electron'
 
 install:
-  - dir n*
+  - dir n* & exit 0
   - ps: 'Install-Product node 6 x64'
  # - npm install --global npm-windows-upgrade
  # - npm-windows-upgrade --no-spinner --npm-version latest
@@ -15,7 +15,7 @@ install:
   
   #- dir n*
   - npm install npm
-  - dir n* & exit 0
+  - dir n*
   - appveyor-retry npm prune
   - npm update
   
