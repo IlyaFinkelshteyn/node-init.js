@@ -12,7 +12,9 @@ install:
  # - npm-windows-upgrade --no-spinner --npm-version latest
  # - npm install
   
-  - npm install npm -g
+  - dir np*
+  - npm install npm
+  - dir np*
   - appveyor-retry npm prune
   - npm update
   
